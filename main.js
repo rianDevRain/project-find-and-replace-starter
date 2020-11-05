@@ -39,5 +39,42 @@ replaceAllButton.addEventListener("click", () => {
 		}
 	}
 });
-// cell.innerHTML = replaceval;
-// console.log("this ran");
+
+// Below is the find and replace done with i = 0
+
+
+// replaceAllButton.addEventListener("click", () => {
+// 	let findVal = findInput.value
+// 	let replaceVal = replaceInput.value
+// 	for (let i = 0; i < rowElements.length; i++) {
+// 		let cellElements = getCellElements(rowElements[i])
+// 		for (let j = 0; j < cellElements.length; j++) {
+// 			let cellCopy = cellElements[j].innerHTML
+// 			if (cellCopy.includes(findVal)) {
+// 				let regexpress = new RegExp(findVal)
+// 				let newVal = cellCopy.replace(regexpress, replaceVal)
+// 				cellElements[j].innerHTML = newVal
+// 			}
+// 		}
+// 	}
+// })
+
+// Below is my attempt to do project with nodelist.forEach
+
+// replaceAllButton.addEventListener("click", () => {
+// 	let findVal = findInput.value;
+// 	let replaceVal = replaceInput.value;
+// 	rowElements.forEach(row => {
+// 		let cellElements = getCellElements(row)
+// 		cellElements.forEach(cell => {
+// 			let cellCopy = cell.innerHTML
+// 			if (cellCopy.includes(findVal) 
+// 				let regexpress = new RegExp(findVal)
+// 				let newVal = cellCopy.replace(regexpress, replaceVal)
+// 				cell.innerHTML = newVal
+// 			}
+// 		})
+// 	})
+
+
+
