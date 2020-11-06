@@ -22,25 +22,25 @@ function getCellElements(currentRowElement) {
 	return currentRowElement.querySelectorAll(".cell");
 }
 
-// YOUR CODE GOES HERE
+// I feel the code below needs very little explanation. The code tells the story...
 
-// replaceAllButton.addEventListener("click", () => {
-// 	let findVal = findInput.value;
-// 	let replaceVal = replaceInput.value;
-// 	for (let row of rowElements) {
-// 		let cellElements = getCellElements(row);
-// 		for (let cell of cellElements) {
-// 			let cellCopy = cell.innerHTML;
-// 			if (cellCopy.includes(findVal)) {
-// 				let regexpress = new RegExp(findVal);
-// 				let newVal = cellCopy.replace(regexpress, replaceVal);
-// 				cell.innerHTML = newVal;
-// 			}
-// 		}
-// 	}
-// });
+replaceAllButton.addEventListener("click", () => {
+	let findVal = findInput.value;
+	let replaceVal = replaceInput.value;
+	for (let row of rowElements) {
+		let cellElements = getCellElements(row);
+		for (let cell of cellElements) {
+			let cellCopy = cell.innerHTML;
+			if (cellCopy.includes(findVal)) {
+				let regexpress = new RegExp(findVal);
+				let newVal = cellCopy.replace(regexpress, replaceVal);
+				cell.innerHTML = newVal;
+			}
+		}
+	}
+});
 
-// Below is the find and replace done with i = 0
+// Below is the find and replace done with i = 0 
 
 // replaceAllButton.addEventListener("click", () => {
 // 	let findVal = findInput.value
@@ -60,18 +60,18 @@ function getCellElements(currentRowElement) {
 
 // Below is my attempt to do project with nodelist.forEach
 
-replaceAllButton.addEventListener("click", () => {
-	let findVal = findInput.value;
-	let replaceVal = replaceInput.value;
-	rowElements.forEach((row) => {
-		let cellElements = getCellElements(row);
-		cellElements.forEach((cell) => {
-			let cellCopy = cell.innerHTML;
-			if (cellCopy.includes(findVal)) {
-				let regexpress = new RegExp(findVal);
-				let newVal = cellCopy.replace(regexpress, replaceVal);
-				cell.innerHTML = newVal;
-			}
-		});
-	});
-});
+// replaceAllButton.addEventListener("click", () => {
+// 	let findVal = findInput.value;
+// 	let replaceVal = replaceInput.value;
+// 	rowElements.forEach((row) => {
+// 		let cellElements = getCellElements(row);
+// 		cellElements.forEach(cell => {
+// 			let cellCopy = cell.innerHTML;
+// 			if (cellCopy.includes(findVal)) {
+// 				let regexpress = new RegExp(findVal);
+// 				let newVal = cellCopy.replace(regexpress, replaceVal);
+				
+// 	})
+// })
+// 	})
+// 	})
